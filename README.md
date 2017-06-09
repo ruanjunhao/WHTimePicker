@@ -7,7 +7,7 @@
 如果编译报错，可能是项目中没有Masonry
 ```
 
- ![img]WHTimePicker/img-folder/example.gif 
+ ![img](https://github.com/remember17/WHTimePicker/blob/master/img-folder/example.gif)
 
 ## 使用方法 
 
