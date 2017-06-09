@@ -2,6 +2,10 @@
 好用的时间选择器
 
 ### ！注意：需要用到 Masonry 框架，请提前准备好‘Masonry’
+```objc
+在WHTimePicker.h文件中导入了#import "Masonry.h"
+如果编译报错，可能是项目中没有Masonry
+```
 
 ## 使用方法 
 
