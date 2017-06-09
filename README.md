@@ -1,5 +1,5 @@
 # WHTimePicker
-好用的时间选择器
+好用的时间选择器, 支持cocoapods， 可以直接在项目中 pod ‘WHTimePicker’
 
 ### ！注意：需要用到 Masonry 框架，请提前准备好‘Masonry’
 ```objc
@@ -11,7 +11,8 @@
 
 1. 导入头文件 
 ```objc
- #import "WHTimePicker.h"
+ a>> 直接在本网页下载使用：#import "WHTimePicker.h"
+ b>> 或者利用CocoaPods安装到项目中：#import <WHTimePicker.h>
 ```
 
 2. 添加代理
@@ -55,6 +56,6 @@
     NSLog(@"时间选择器消失了~");
 }
 ```
-### 如果觉得好用就给个Star吧😁
+### 如果觉得好用就给个Star吧,谢谢😁
 
 ## MIT LICENSE
