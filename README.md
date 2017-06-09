@@ -7,6 +7,8 @@
 如果编译报错，可能是项目中没有Masonry
 ```
 
+ ![img]WHTimePicker/img-folder/example.gif 
+
 ## 使用方法 
 
 1. 导入头文件 
