@@ -1,10 +1,11 @@
 # WHTimePicker
 好用的时间选择器, 支持cocoapods， 可以直接在项目中 pod ‘WHTimePicker’
+如果没找到, 请先pod setup, 然后再pod ‘WHTimePicker’
 
-### ！注意：需要用到 Masonry 框架，请提前准备好‘Masonry’
+### ！注意：需要用到 Masonry 框架
 ```objc
 在WHTimePicker.h文件中导入了#import "Masonry.h"
-如果编译报错，可能是项目中没有Masonry
+如果你的项目中没有Masonry,会自动帮你导入Masonry
 ```
 
  ![img](https://github.com/remember17/WHTimePicker/blob/master/img-folder/example1.gif)
