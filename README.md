@@ -25,9 +25,6 @@
 
 3. 初始化创建WHTimePicker
 ```objc
-/** 创建时间选择器 */
--(void)setupTimePicker{
-    
     //类方法创建
     WHTimePicker *picker = [WHTimePicker timePickerWithType:allDateArray Frame:self.view.bounds];
     picker.delegate = self;
@@ -36,12 +33,10 @@
     UIWindow* currentWindow = [UIApplication sharedApplication].keyWindow;
     [currentWindow addSubview:picker];
     
-
     // 顶部确定栏背景颜色,如果不设置，默认为天蓝色
 //    picker.topTitleColor = [UIColor lightGrayColor];
     // 顶部"确定","类型","取消"按钮的文字颜色,如果不设置，默认为白色
 //    picker.topBackColor = [UIColor blackColor];
-}
 ```
 
 4. 实现代理方法一
