@@ -1,7 +1,7 @@
 //
 //  NSString+WHString.h
 //  WHCategory
-//
+//  https://github.com/remember17/WHTimePicker
 //  Created by 吴浩 on 2017/2/7.
 //  Copyright © 2017年 wuhao. All rights reserved.
 //

@@ -1,7 +1,7 @@
 //
 //  WHTimePicker.m
 //  WHTimePicker
-//
+//  https://github.com/remember17/WHTimePicker
 //  Created by 吴浩 on 2017/6/9.
 //  Copyright © 2017年 remember17. All rights reserved.
 //
@@ -329,8 +329,8 @@
 
 #pragma mark-----点击方法
 - (void)okButtonClick{
-    if ([self.delegate respondsToSelector:@selector(PickerSelectorIndixString:)]) {
-        [self.delegate PickerSelectorIndixString:[self getCurrentPickerString]];
+    if ([self.delegate respondsToSelector:@selector(getSelectedString:)]) {
+        [self.delegate getSelectedString:[self getCurrentPickerString]];
     }
     [self removeTimerPicker];
 }
@@ -356,9 +356,9 @@
         
     } completion:^(BOOL finished) {
         //判断语句必须加,否则崩溃
-        if([self.delegate respondsToSelector:@selector(PickerSelectorCancel)])
+        if([self.delegate respondsToSelector:@selector(timePickerDisappare)])
         {
-            [self.delegate PickerSelectorCancel];
+            [self.delegate timePickerDisappare];
         }
         [self.pickerBackView removeFromSuperview];
         [self removeFromSuperview];

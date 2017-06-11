@@ -1,7 +1,7 @@
 //
 //  WHTimePicker.h
 //  WHTimePicker
-//
+//  https://github.com/remember17/WHTimePicker
 //  Created by 吴浩 on 2017/6/9.
 //  Copyright © 2017年 remember17. All rights reserved.
 //
@@ -18,12 +18,12 @@
 
 /**
  点击确定的时候自动调用此方法
- @param str 返回的string
+ @param string 返回的string
  */
-- (void)PickerSelectorIndixString:(NSString *)str;
+- (void)getSelectedString:(NSString *)string;
 
 /** 选择器消失的时候调用此方法 */
-- (void)PickerSelectorCancel;
+- (void)timePickerDisappare;
 
 @end
 

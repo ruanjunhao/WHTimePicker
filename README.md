@@ -41,16 +41,17 @@
 
 4. 实现代理方法一
 ```objc
-/** 代理方法，拿到选择的时间 */
--(void)PickerSelectorIndixString:(NSString *)str {
-    [button setTitle:str forState:UIControlStateNormal];
+/** 代理方法一 返回选择的字符串*/
+- (void)getSelectedString:(NSString *)string {
+    NSLog(@"你选择了%@",string);
+   [button setTitle:string forState:UIControlStateNormal];
 }
 ```
 
 5. 实现代理方法二
 ```objc
-/** 代理方法，时间选择器消失的时候自动调用*/
-- (void)PickerSelectorCancel {
+/** 代理方法二 时间选择器消失的时候回调*/
+- (void)timePickerDisappare {
     NSLog(@"时间选择器消失了~");
 }
 ```

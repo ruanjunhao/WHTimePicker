@@ -1,7 +1,7 @@
 //
 //  ViewController.m
 //  WHTimePickerDemo
-//
+//  https://github.com/remember17/WHTimePicker
 //  Created by 吴浩 on 2017/6/9.
 //  Copyright © 2017年 remember17. All rights reserved.
 //
@@ -17,6 +17,7 @@
     UIButton *button;
 }
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -29,7 +30,7 @@
 
 
 /** 创建时间选择器 */
--(void)setupTimePicker{
+- (void)setupTimePicker{
     
     WHTimePicker *picker = [WHTimePicker timePickerWithType:allDateArray Frame:self.view.bounds];
     picker.delegate = self;
@@ -45,13 +46,17 @@
 //    picker.topBackColor = [UIColor blackColor];
 }
 
-/** 代理方法 */
--(void)PickerSelectorIndixString:(NSString *)str {
-    [button setTitle:str forState:UIControlStateNormal];
+
+/** 代理方法一 返回选择的字符串*/
+- (void)getSelectedString:(NSString *)string {
+    NSLog(@"你选择了%@",string);
+   [button setTitle:string forState:UIControlStateNormal];
 }
 
-/** 代理方法 */
-- (void)PickerSelectorCancel {
+
+/** 代理方法二 时间选择器消失的时候回调*/
+- (void)timePickerDisappare {
     NSLog(@"时间选择器消失了~");
 }
+
 @end

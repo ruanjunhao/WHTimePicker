@@ -2,7 +2,7 @@
     Pod::Spec.new do |s|  
       
       s.name         = "WHTimePicker"  
-      s.version      = "1.0.1"  
+      s.version      = "1.0.3"  
       s.summary      = "好用的时间选择器."  
       s.homepage     = "https://github.com/remember17/WHTimePicker"  
       s.license      = "MIT"  
