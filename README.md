@@ -55,6 +55,5 @@
     NSLog(@"时间选择器消失了~");
 }
 ```
-### 如果觉得好用就给个Star吧,谢谢😁
 
-## MIT LICENSE
+### MIT LICENSE
